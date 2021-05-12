@@ -13,9 +13,9 @@ class FlashCardSkill(ChatterboxSkill):
         nbFlashcards = message.data.get('number')
         if nbFlashcards is not None:
             # self.speak_dialog('like.tomato.type', {'type': tomato_type})
-            self.log.info("number of wanted flashcards : " + str(nbFlashcards))
+            self.speak("number of wanted flashcards : " + str(nbFlashcards))
         else:
-            self.log.info("number of wanted flashcards not specified")
+            self.speak("number of wanted flashcards not specified")
             # self.speak_dialog('like.tomato.generic')
 
 
