@@ -10,13 +10,14 @@ class FlashCardSkill(ChatterboxSkill):
 
     @intent_handler('show.me.flashcards.intent')
     def handle_do_you_like(self, message):
-        nbFlashcards = message.data.get('number')
-        if nbFlashcards is not None:
-            # self.speak_dialog('like.tomato.type', {'type': tomato_type})
-            self.speak("number of wanted flashcards : " + str(nbFlashcards))
-        else:
-            self.speak("number of wanted flashcards not specified")
-            # self.speak_dialog('like.tomato.generic')
+        self.speak("hey, you are in the handle do you like")
+        # nbFlashcards = message.data.get('number')
+        # if nbFlashcards is not None:
+        #     # self.speak_dialog('like.tomato.type', {'type': tomato_type})
+        #     self.speak("number of wanted flashcards : " + str(nbFlashcards))
+        # else:
+        #     self.speak("number of wanted flashcards not specified")
+        #     # self.speak_dialog('like.tomato.generic')
 
 
 def create_skill():
