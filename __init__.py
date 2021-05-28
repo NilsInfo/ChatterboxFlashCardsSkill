@@ -1,5 +1,5 @@
 from adapt.intent import IntentBuilder
-from chatterbox import ChatterboxSkill, intent_handler
+from chatterbox.skills import ChatterboxSkill, intent_handler
 from os import mkdir
 from os.path import join
 class FlashCardSkill(ChatterboxSkill):
